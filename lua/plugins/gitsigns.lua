@@ -1,4 +1,4 @@
-require("lz.n").load {
+return {
   "gitsigns.nvim",
   event = "DeferredUIEnter",
   before = function()

@@ -1,6 +1,6 @@
 vim.g.autoformat = true
 
-require("lz.n").load {
+local M = {
   "conform.nvim",
   event = "BufWritePre",
   cmd = "ConformInfo",
@@ -80,3 +80,5 @@ local cmds = {
 for name, cmd in pairs(cmds) do
   vim.api.nvim_create_user_command(name, cmd.command, cmd.options or {})
 end
+
+return M

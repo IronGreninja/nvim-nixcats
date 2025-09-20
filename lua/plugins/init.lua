@@ -1,4 +1,4 @@
-require("lz.n").load {
+return {
   {
     "indent-blankline.nvim",
     event = "DeferredUIEnter",

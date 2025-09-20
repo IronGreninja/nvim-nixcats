@@ -1,4 +1,4 @@
-require("lz.n").load {
+return {
   "bufferline.nvim",
   event = { "DeferredUIEnter" },
   after = function()
