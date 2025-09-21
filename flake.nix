@@ -64,7 +64,9 @@
           lz-n # lazy-loading
           vim-sleuth # auto set shiftwidth & expandtab
           plenary-nvim # dep library for some plugins
-          snacks-nvim
+          nui-nvim # ui-library
+          snacks-nvim # some plugins need early-start
+          nvim-notify
           friendly-snippets # provids a bunch of snippets for diff languages
 
           mini-icons
@@ -95,13 +97,14 @@
           lualine-nvim
           bufferline-nvim
           indent-blankline-nvim
+          fidget-nvim
+          noice-nvim
 
           telescope-nvim
           telescope-fzf-native-nvim
 
           nvim-colorizer-lua
           gitsigns-nvim
-          fidget-nvim
 
           mini-pairs
           mini-surround
