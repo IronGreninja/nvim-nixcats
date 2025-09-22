@@ -73,14 +73,20 @@
           mini-files
         ];
 
-        themer = with pkgs.vimPlugins; (
-          builtins.getAttr (categories.colorscheme or "onedark") {
-            # Theme switcher without creating a new category
-            "onedark" = onedark-nvim;
-            "tokyonight" = tokyonight-nvim;
-            "gruvbox-material" = gruvbox-material;
-          }
-        );
+        themes = with pkgs.vimPlugins; [
+          kanagawa-paper-nvim
+          onedark-nvim
+          gruvbox-material
+        ];
+
+        # themer = with pkgs.vimPlugins; (
+        #   builtins.getAttr (categories.colorscheme or "onedark") {
+        #     # Theme switcher without creating a new category
+        #     "onedark" = onedark-nvim;
+        #     "tokyonight" = tokyonight-nvim;
+        #     "gruvbox-material" = gruvbox-material;
+        #   }
+        # );
       };
 
       # not loaded automatically at startup.
@@ -167,8 +173,9 @@
         # (and other information to pass to lua)
         categories = {
           general = true;
-          themer = true;
-          colorscheme = "gruvbox-material";
+          # themer = true;
+          # colorscheme = "gruvbox-material";
+          themes = true;
           test = true;
         };
       };
@@ -183,8 +190,7 @@
         };
         categories = {
           general = true;
-          themer = true;
-          colorscheme = "onedark";
+          themes = true;
           test = true;
         };
       };
