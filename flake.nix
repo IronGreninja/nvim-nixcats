@@ -55,6 +55,8 @@
           # Telescope deps
           ripgrep
           fd
+
+          wl-clipboard
         ];
       };
 
